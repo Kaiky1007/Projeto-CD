@@ -13,7 +13,7 @@ O projeto é dividido em quatro scripts principais, cada um focado num tipo dife
 ## 2. Fonte dos Dados
 
 Todos os scripts utilizam o arquivo de microdados da PNS 2019.
-* **Arquivo Necessário:** `MICRODADOS_PNS_2019.txt`
+* **Arquivo Necessário:** `MICRODADOS_PNS_2019.txt` [Microdados da Pesquisa Nacional de Saúde (IBGE)](https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html?=&t=microdados)
 * **Observação:** Este arquivo deve estar localizado na mesma pasta que os scripts Python para que eles funcionem corretamente.
 
 ## 3. Pré-requisitos
@@ -285,8 +285,7 @@ Este script analisa a composição percentual de grupos categóricos na amostra.
 * **Processamento:**
     1.  Carrega dados de sexo (`C004`), idade (`C008`), prática de atividade física (`P040`), peso e altura.
     2.  O script possui uma função para encontrar o arquivo de dados da PNS dinamicamente na pasta.
-    3.  **Atenção:** O script simula os dados de sexo (`C004`) para garantir a funcionalidade do gráfico, o que indica que pode haver um problema na leitura ou tratamento desta coluna específica no arquivo original.
-    4.  Cria variáveis categóricas como "Pratica / Não Pratica" para atividade física e as classes de IMC (Abaixo do Peso, Peso Normal, etc.).
+    3.  Cria variáveis categóricas como "Pratica / Não Pratica" para atividade física e as classes de IMC (Abaixo do Peso, Peso Normal, etc.).
 * **Visualizações Geradas:**
     * Proporção de Prática de Atividade Física
     * Distribuição por Sexo (com dados simulados)
